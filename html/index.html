@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script type = "text/JavaScript" src = "https://underscorejs.org/underscore-min.js"></script>
+
+    <title>Student Enrollment Form using JPDB</title>
+
+    <style>
+        form{
+            border: 2px solid black;
+            width: 40%;
+            padding: 20px;
+            margin: auto;
+        }
+        input{
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page header text.center">
+            <h2><center>Student Enrollment Form using JPDB API</center></h2>
+        </div>
+        <form id="studentform" method="get">
+            <div class="form-group">
+                <label>Roll-No: </label>
+                <input type="text" id="sturollnum" class="form-control">
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label>Full-Name: </label>
+                <input type="text" id="stuname" class="form-control">
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label>Class: </label>
+                <input type="text" id="stuclass" class="form-control">
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label>Enrollment-Date: </label>
+                <input type="date" id="stuenrollmentdate" class="form-control">
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label>Birth-Date: </label>
+                <input type="date" id="stubirthdate" class="form-control">
+            </div>
+            <br><br>
+
+            <div class="form-group">
+                <label>Address: </label>
+                <input type="text" id="stuaddress" class="form-control">
+            </div>      
+            <br><br>
+
+
+            <div class="form-group text-center">
+               <button type="button" class="btn btn-lg btn-primary" id="saveForm">Save</button>
+               <button type="button" class="btn btn-lg btn-primary" id="updateForm">Update</button>
+               <button type="button" class="btn btn-lg btn-primary" id="resetForm">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script>
+    <script type="text/javascript" src="./../js/index.js"></script>
+</body>
+</html>
